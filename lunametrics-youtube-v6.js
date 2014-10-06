@@ -65,7 +65,7 @@ function trackYouTube()
 	//Harken to the iframes of the page
 	//thy loathesome demon gallavanting upon
 	//our innocent sweet html
-	jQuery('iframe').each(function() {
+	jQuery('iframe[src*="youtube.com"]').each(function() {
 		//but what is this?
 		//an iframe! Avast!
 		if($(this).attr('src')){
